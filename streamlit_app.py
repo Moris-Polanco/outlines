@@ -13,12 +13,13 @@ title = st.text_input("")
 
 st.write("Generating Essay Outline...")
 
-response = api.Engine(engine="text-davinci-003").completion(
-    prompt=title,
-    max_tokens=1000,
-    temperature=0.7,
-    top_p=0.9,
-    frequency_penalty=0.2
+response = completions = openai.Completion.create(
+        engine="text-davinci-003",
+        prompt=prompt,
+        max_tokens=1024,
+        n=1,
+        stop=None,
+        temperature=0.5,
 )
 
 st.write(response['choices'][0]['text'])
