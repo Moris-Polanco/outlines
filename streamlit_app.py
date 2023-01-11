@@ -12,7 +12,7 @@ st.title('GPT-3 Essay Outliner')
 title = st.text_input('Enter the title of your essay:')
 
 # Generate essay outline using OpenAI GPT-3
-prompt = f"Outline: {title}"
+prompt = f"Contents: {title}"
 response = openai.Completion.create(
     engine="text-davinci-003",
     prompt=prompt,
