@@ -23,4 +23,4 @@ if st.button('Generate Outline'):
 for i in range(generated_outline.shape[0]): 
     outline = tokenizer.decode(generated_outline[i], skip_special_tokens=True) 
     st.markdown(f"#### Outline {i+1}") 
-    st.success(outline).
+    st.success(outline)
