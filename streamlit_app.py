@@ -5,6 +5,10 @@ import os
 # Autenticación de OpenAI (oculta la clave en una variable de entorno)
 openai.api_key = os.environ.get("OPENAI_API_KEY")
 
+# Intialize GPT-3 model 
+tokenizer = openai.AutoTokenizer.from_pretrained('text-davinci-003') 
+model = openai.AutoModelWithLMHead.from_pretrained('text-davinci-003') 
+
 # Create the Streamlit app 
 st.title("GPT-3 Outline Generator") 
 prompt = st.text_input('Enter your essay topic:') 
