@@ -6,7 +6,7 @@ import os
 openai.api_key = os.environ.get("OPENAI_API_KEY")
 
 # Crear una página de bienvenida
-st.title("Bienvenido a tu App de Streamlit con OpenAI GPT-3 Text-Davinci-003")
+st.title("GENERADOR DE ESQUEMAS")
 st.markdown("Esta aplicación te ayudará a crear outlines de artículos usando OpenAI GPT-3 Text-Davinci-003.")
 
 # Obtener el texto de entrada del usuario
