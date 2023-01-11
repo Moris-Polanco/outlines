@@ -5,12 +5,6 @@ import os
 # Autenticación de OpenAI (oculta la clave en una variable de entorno)
 openai.api_key = os.environ.get("OPENAI_API_KEY")
 
-import streamlit as st
-import openai
-
-# API key de OpenAI
-openai.api_key = "YOUR_API_KEY"
-
 # Crear una página de bienvenida
 st.title("Bienvenido a tu App de Streamlit con OpenAI GPT-3 Text-Davinci-003")
 st.markdown("Esta aplicación te ayudará a crear outlines de artículos usando OpenAI GPT-3 Text-Davinci-003.")
